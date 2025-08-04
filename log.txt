@@ -1,0 +1,5 @@
+Day-01 Topics:
+    -Variables
+    -Keywords
+    -Operators
+    -inc & decrement operator

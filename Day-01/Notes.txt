@@ -1,0 +1,19 @@
+--Variables:
+
+        1.Var - global scope
+        2.let - local scope
+        3.const - Cant be changed
+
+--Keywords:
+
+        -Predefined functions and values in js
+        -Eg:var,const,let
+
+--Comments:
+
+        -The notes inside the code and doesnt want to executes in the code.
+    
+--Operators:
+        -Operators helps to perform specific operations in the js using values like arithmetic operations
+        -Eg: "+"-->Used for concatenation of string and adding of integers.
+        -Some other Examples are =,+,-,==,++,--,>,<
