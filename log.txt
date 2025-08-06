@@ -3,3 +3,7 @@ Day-01 Topics:
     -Keywords
     -Operators
     -inc & decrement operator
+    -31.44
+Day-02 Topics:
+    -Datatypes
+    -Functions
