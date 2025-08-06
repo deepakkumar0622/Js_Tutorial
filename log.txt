@@ -7,3 +7,4 @@ Day-01 Topics:
 Day-02 Topics:
     -Datatypes
     -Functions
+    -parameters

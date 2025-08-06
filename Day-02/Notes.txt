@@ -12,3 +12,28 @@ Datatypes in js:
 
 Functions in JS:
     - Function is a block of the code which executes the code and returns a value inside the block.        
+    -Eg:
+        a = 10;
+        b = 20;
+
+        function add() {
+        console.log(a + b);
+        }
+
+        add();
+
+Parameters:
+    -Parameters are the values given as a inputs to the function using the function call.
+    -Eg:
+        function add(a, b) {
+        console.log(a + b);
+        }
+        add(10, 30);
+Return keyword:
+    -Return keyword helps to gets a value out of a function that we need to retrive from the function as output.
+    -Eg:
+        function name() {
+         return "Deepak";
+        }
+        let a = name();
+        console.log(a);
