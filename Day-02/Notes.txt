@@ -1,0 +1,14 @@
+Datatypes in js:
+
+    Primitive types->
+        1.Int
+        2.String
+        3.Boolean
+        4.Null
+        5.Undefined
+    Non-Primitive types->
+        1.object
+        2.array    
+
+Functions in JS:
+    - Function is a block of the code which executes the code and returns a value inside the block.        
