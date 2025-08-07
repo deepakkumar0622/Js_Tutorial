@@ -1,0 +1,12 @@
+Conditional Statements:
+    -These statements execute the output when the condition satisfies and gives true value.
+
+If-else:
+    -These statement excutes the statements inside the if block if the condition is true or excutes else block.
+    -Syntax:
+        if(Condition){
+            //Statements
+        }
+        else{
+            //statements        
+        }
