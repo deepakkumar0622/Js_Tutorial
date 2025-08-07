@@ -10,3 +10,7 @@ If-else:
         else{
             //statements        
         }
+Logical operators:
+    -AND(&&)
+    -OR(||) 
+    -NOT(!)
