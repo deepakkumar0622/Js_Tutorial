@@ -1,0 +1,44 @@
+<h1>Guess the Number(1-10)</h1>
+
+
+<input id="num" type="text">
+
+
+<button id="btn" onclick="check()">Guess</button>
+
+<p id="res"></p>
+
+<script>
+
+    var input = document.getElementById("num");
+    var result = document.getElementById("res");
+    var butt=document.getElementById("btn");
+    var a = Math.random();
+    var random=Math.floor(a*10+1);
+    console.log(random)
+
+    var count=0;
+    var attempts=3;
+
+    function check(){
+
+        count++;
+        
+            if (random==input.value) {
+                result.textContent="You Are Right!"
+                butt.disabled=true;
+            }
+            else if(count>=3){
+                result.textContent="Your attempts are completed and the guess is "+random
+                butt.disabled=true;
+            }
+            else{
+                result.textContent="You Are Wrong and "+(attempts-count)+" Attempts Remains"
+            }
+        
+        
+    }
+
+
+    
+</script>
