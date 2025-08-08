@@ -6,3 +6,16 @@ Looping statements:
             for(declaration,condition,incre/decre){
                 //statements
             }
+
+
+
+DOM Manipulation:
+    -Document object model is a tree structured model which denotes the structure of the root HTMl file.
+    -DOM Manipulation refers to the process of modifying the content,structuer or style of a n web page's DOM using js
+    -This allows webpages to respond to user's interactions.
+
+Events:
+    An event in js is an action that happens within a webpage,such as a users interaction(Clicking a button ,etc..)
+
+Event Handler:
+    An event handle in js is a function that responds to an event when it occurs.
