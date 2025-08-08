@@ -1,0 +1,90 @@
+
+
+<div class="mainDiv"> 
+    <div ondblclick="expand()" onclick="Shrink()" id="div1"></div>
+    
+    <div class="buttDiv">
+        <button onclick="left()">Left</button>
+        <button onclick="right()">right</button>
+    </div>
+    <button onclick="normal()">Normal</button>
+
+</div>
+
+<style>
+
+    body{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+    .mainDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    #div1{
+        background-color: red;
+        height: 200px;
+        width: 200px;
+    }
+    
+    button{
+        margin: 20px;
+        padding: 10px 50px;
+    }
+
+    .buttDiv{
+        margin-top: 20px;
+        display: flex;
+
+    }
+
+    .normal{
+        transform: rotate(-360deg);
+        /* margin-bottom:50px; */
+        transition: 3s;
+    }
+
+    .right{
+        transform: rotate(90deg);
+        margin-left:500px ;
+        transition: 3s;
+    }
+    .left{
+        transform: rotate(-90deg);
+        margin-right:500px ;
+        transition: 3s;
+    }
+
+
+
+</style>
+
+<script>
+
+    var box= document.getElementById("div1");
+
+    function left(){
+        box.setAttribute("class","left")
+    }
+    function right(){
+        box.setAttribute("class","right")
+    }
+
+    function normal(){
+        box.setAttribute("class","normal")
+    }
+
+    function Shrink(){
+        box.style.scale="50%";
+        box.style.transition="5s";
+    }
+    function expand(){
+        box.style.scale="100%";
+        box.style.transition="5s";
+    }
+
+</script>

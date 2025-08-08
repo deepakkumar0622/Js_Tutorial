@@ -6,6 +6,8 @@
 
 <button id="btn" onclick="check()">Guess</button>
 
+
+
 <p id="res"></p>
 
 <script>
@@ -16,24 +18,33 @@
     var a = Math.random();
     var random=Math.floor(a*10+1);
     console.log(random)
+    
 
     var count=0;
-    var attempts=3;
+    var attempts=5;
+
+    var score=10;
 
     function check(){
 
         count++;
         
+        
             if (random==input.value) {
-                result.textContent="You Are Right!"
+                result.textContent="You Are Right!🎉🎉"
+                result.style.color="green"
+                alert("Your Score : "+score)
                 butt.disabled=true;
+
             }
-            else if(count>=3){
+            else if(count>=attempts){
                 result.textContent="Your attempts are completed and the guess is "+random
+                result.style.color="red";
                 butt.disabled=true;
             }
             else{
                 result.textContent="You Are Wrong and "+(attempts-count)+" Attempts Remains"
+                score=score-2;
             }
         
         
