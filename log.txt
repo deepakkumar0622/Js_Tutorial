@@ -12,4 +12,8 @@ Day-02 Topics:
     -58.12
 Day-03 Topics:
     -If-else
-    -
+    -AND
+    -OR
+    -1.24.21
+Day-04 Topics:
+    -for loop
