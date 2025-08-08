@@ -1,0 +1,8 @@
+Looping statements:
+
+    1.For loop :
+        -This loop condition helps to excutes the statements for a defined range.
+        -Syntax:
+            for(declaration,condition,incre/decre){
+                //statements
+            }
