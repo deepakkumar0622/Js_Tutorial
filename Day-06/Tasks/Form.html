@@ -1,0 +1,137 @@
+<head>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    
+    .container-1 {
+        border: 1px solid black;
+        padding: 10px;
+        width: 300px;
+    }
+    
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    label {
+        width: 100px;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    input, select {
+        flex: 1;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    button{
+        width: 100%;
+        padding: 5px;
+        background-color: mediumspringgreen;
+    }
+    
+    </style>
+    </head>
+    
+    <body>
+        <h1>STUDENT FORM</h1>
+        <div class="container-1">
+            <ul>
+                <li>
+                    <label>Name</label>
+                    <input id="name" type="text">
+                </li>
+                <li>
+                    <label>Age</label>
+                    <input id="age" type="text">
+                </li>
+                <li >
+                    <label>Gender</label>
+                            <input name="gender" value="Male" type="radio"/>
+                            <label>Male</label>
+                            <input name="gender" value="Female" type="radio">
+                            <label>Female</label/>  
+                </li>
+                <li>
+                    <label>Course</label>
+                    <select>
+                        <option>JavaScript</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                    </select>
+                </li>
+                <li>
+                    <label>E-mail</label>
+                    <input id="email" type="text">
+                </li>
+            </ul>
+            <button id="button">Save</button>
+        </div>
+        <table style="border: 1px solid black;margin-top: 10PX;">
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>COURSE</th>
+            <th>EMAIL</th>
+
+        </table>
+    </body>
+
+    <style>
+        th , td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+    
+
+    <body>
+    
+    
+        <script>
+            document.getElementById("button").addEventListener("click", function () {
+                let name = document.getElementById("name").value;
+                let age = document.getElementById("age").value;
+                let gender = document.querySelector('input[name="gender"]:checked')?.value || "";
+                let course = document.querySelector("select").value;
+                let email = document.getElementById("email").value;
+    
+            
+                let student = { name, age, gender, course, email };
+                console.log(student);
+    
+        
+                let table = document.querySelector("table");
+                let row = table.insertRow();
+                row.insertCell(0).innerText = student.name;
+                row.insertCell(1).innerText = student.age;
+                row.insertCell(2).innerText = student.gender;
+                row.insertCell(3).innerText = student.course;
+                row.insertCell(4).innerText = student.email;
+    
+                
+                document.getElementById("name").value = "";
+                document.getElementById("age").value = "";
+                document.querySelectorAll('input[name="gender"]').forEach(r => r.checked = false);
+                document.getElementById("course").selectedIndex = 0;
+                document.getElementById("email").value = "";
+            });
+        </script>
+    </body>
+    
+    
