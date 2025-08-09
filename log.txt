@@ -24,3 +24,9 @@ Day-05 Topics:
     -Tasks
     -event object
     -2.56.17
+Day-06 Topics:
+    -innerHTMl
+    -selectors
+    -Form creation
+    -TODO app
+    -3.36.10
