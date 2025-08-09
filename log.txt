@@ -22,4 +22,5 @@ Day-04 Topics:
     -2.28.00
 Day-05 Topics:
     -Tasks
+    -event object
     -2.56.17
