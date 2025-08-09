@@ -1,0 +1,23 @@
+<h1 id="name"></h1>
+
+<button onclick="show(event)" id="butt1">John</button>
+<button onclick="show(event)" id="butt2">Hari</button>
+<button onclick="show(event)" id="butt3">Praveen</button>
+
+<script>
+    
+    var n=document.getElementById("name");
+    var b1=document.getElementById("butt1");
+    var b2=document.getElementById("butt2");
+    var b3=document.getElementById("butt3");
+
+
+    function show(event){
+        console.log(event);
+        n.textContent=event.target.textContent;
+    }
+
+
+
+</script>
+
