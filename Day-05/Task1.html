@@ -1,0 +1,15 @@
+<input onkeyup="keyUp()" type="text" id="str">
+
+<h1 id="res"></h1>
+
+<script>
+    var string1=document.getElementById("str");
+
+    var result = document.getElementById("res")
+    
+    function keyUp(){
+        result.textContent=string1.value
+        // console.log(string1.value);
+    }
+
+</script>
