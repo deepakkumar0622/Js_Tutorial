@@ -1,0 +1,26 @@
+innerHTMl:
+
+    Example:
+        <div class="one">
+        <h1>hello</h1>
+        </div>
+
+
+
+        <script>
+            //inner HTMl
+            // var divs=document.getElementById(1);
+            // divs.innerHTML="<h1>Hello World</h1>"
+        </script>       
+
+querySelector:
+    Returns the element using all like class,id,tagName etcc.
+
+    Example:
+            //  queryselector
+    var divs=document.querySelector("h1") //tag
+    var divs=document.querySelector(".h1") //className
+    var divs=document.querySelector("#h1") //Id
+    
+querySelectorAll:
+    Returns a array which respect to the selected class or tag or name
